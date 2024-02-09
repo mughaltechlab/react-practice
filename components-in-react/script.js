@@ -16,7 +16,7 @@ function MainContent(){
 }
 ReactDOM.render(
    <div>
-     <Navbar />
+    <Navbar />
     <MainContent />
    </div>
    ,
