@@ -6,7 +6,7 @@ function Navbar(){
 
 function MainContent(){
     return (
-        <main>
+        <main className = "main">
             <h3>Main Content</h3>
         <p>
             I am LoneWolf who is learning react now in 2024
@@ -23,7 +23,7 @@ function Footer(){
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-   <div>
+    <div>
     <Navbar />
     <MainContent />
     <Footer />
