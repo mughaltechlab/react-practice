@@ -14,10 +14,18 @@ function MainContent(){
         </main>
     )
 }
+function Footer(){
+    return (
+        <footer>
+            <h3>Developed by mughaltechlab with ♥</h3>
+        </footer>
+    )
+}
 ReactDOM.render(
    <div>
     <Navbar />
     <MainContent />
+    <Footer />
    </div>
    ,
    document.getElementById('root')
