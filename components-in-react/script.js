@@ -21,12 +21,13 @@ function Footer(){
         </footer>
     )
 }
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
    <div>
     <Navbar />
     <MainContent />
     <Footer />
    </div>
-   ,
-   document.getElementById('root')
+//    ,
+//    document.getElementById('root')
 )
