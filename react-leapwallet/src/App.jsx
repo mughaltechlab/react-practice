@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ChainProvider } from "@cosmos-kit/react";
 import { AccountModal } from "@leapwallet/embedded-wallet-sdk-react";
 import "@leapwallet/embedded-wallet-sdk-react/styles.css";
-import './App.css'
+import './App.css';
 
 const chainId = "osmosis-1";
 const chain = "osmosis";
