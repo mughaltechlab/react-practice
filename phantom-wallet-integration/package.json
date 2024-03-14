@@ -14,9 +14,14 @@
     "@cosmos-kit/keplr": "^2.6.9",
     "@cosmos-kit/react": "^2.10.11",
     "@leapwallet/embedded-wallet-sdk-react": "^0.3.7",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/types": "^6.0.7",
     "chain-registry": "^1.29.1",
+    "ethers": "^5.7.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-node-polyfills": "^0.21.0",
+    "web3-react-v6-phantom": "^1.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
