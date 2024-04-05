@@ -62,7 +62,6 @@ const Header = ()=>(
         </nav>
     </header>
 )
-
 const MainContent = ()=>(
     <main>
         <MyTitle />
