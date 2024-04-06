@@ -141,7 +141,86 @@ main ul > li::marker{
   color: #fff;
   overflow: hidden;
   border-radius: 12px;
-
+}
+.myCard::before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background: rgba(0, 255, 255, .5);
+  box-shadow:  0 0 10px aqua, inset 0 0 20px rgba(220, 20, 60, 0.468);
+  top: 0;
+  left: -10px;
+  animation: cardBeforeAnime 2s ease-in infinite  ;
+  transition: all;
+}
+@keyframes cardBeforeAnime {
+  20%{
+    top: 0;
+    left: -10px;
+    /* width: 0%; */
+  }
+  40%{
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  45%{
+    left: 99%;
+    top: 0;
+    /* width: 5px; */
+    height: 5px;
+  }
+  60%{
+    left: 99%;
+    top: 0;
+    /* width: 5px; */
+    height: 100%;
+  }
+  65%{
+    top: 99%;
+    height: 5px;
+  }
+  90%{
+    top: 99%;
+    right: 0;
+    height: 5px;
+    /* width: 100%; */
+    opacity: 0;
+  }
+  /* 95%{width: 5px;} */
+  100%{
+    top: 0;
+    right: 99%;
+    /* width: 5px; */
+    height: 100%;
+    background: #000;
+    opacity: 0;
+  }
+  /*
+  80%{
+    bottom: 0;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    background: red;
+  }
+  90%{
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+  } */
+  /*
+  80%{
+    right: 99%
+  }
+  100%{
+    right: 99%;
+    top: 0;
+    height: 100%;
+    width: 5px;
+  } */
 }
 .cardInfo{
   width: 100%;
@@ -198,7 +277,7 @@ main ul > li::marker{
   /* align-items: center; */
   flex-direction: column;
   gap: 20px;
-  padding: 30px;
+  padding: 20px 30px;
 }
 .cardAbout h4{
   font-size: 14px;
