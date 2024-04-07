@@ -63,6 +63,16 @@ section{
   width: 200px;
   font-size: 12px;
   flex-shrink: 0;
+  position: relative;
+}
+.cardsRow .card .status{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffffff;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 2px;
 }
 .cardsRow .card img{
   width: 100%;

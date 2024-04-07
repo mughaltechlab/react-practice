@@ -12,6 +12,8 @@ const cardData = [
         country: 'USA',
         title: 'Mountain Biking Group',
         price: 50,
+        isStatus: true,
+        status : 'sold',
     },
     {
         img : './src/assets/card_img2.png',
@@ -20,6 +22,7 @@ const cardData = [
         country: 'USA',
         title: 'Learn wedding photography',
         price: 120,
+        isStatus: false,
     },
     {
         img : './src/assets/card_img3.png',
@@ -28,6 +31,8 @@ const cardData = [
         country: 'USA',
         title: 'Life lessons with Katie Zaferes',
         price: 136,
+        isStatus: true,
+        status : 'online',
     },
     {
         img : './src/assets/card_img1.png',
@@ -36,6 +41,8 @@ const cardData = [
         country: 'USA',
         title: 'Mountain Biking Group',
         price: 50,
+        isStatus: true,
+        status : 'close',
     },
     {
         img : './src/assets/card_img2.png',
@@ -44,6 +51,8 @@ const cardData = [
         country: 'USA',
         title: 'Learn wedding photography',
         price: 120,
+        isStatus: true,
+        status : 'sales end',
     },
     {
         img : './src/assets/card_img3.png',
@@ -52,6 +61,7 @@ const cardData = [
         country: 'USA',
         title: 'Life lessons with Katie Zaferes',
         price: 136,
+        isStatus: false,
     },
 ];
 
