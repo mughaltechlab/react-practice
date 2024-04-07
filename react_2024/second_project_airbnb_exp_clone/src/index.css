@@ -84,7 +84,7 @@ section{
   font-size: 14px;
 }
 
-
+/* ! MEDIA */
 @media (max-width:800px){
   .hero .gridImg{
     width: min(100%,400px);
