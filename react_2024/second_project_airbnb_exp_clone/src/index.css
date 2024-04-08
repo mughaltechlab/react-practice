@@ -46,11 +46,10 @@ section{
   font-size: 40px;
   margin-block: 20px;
 }
-/* cardsRow */
+/**------------> cardsRow */
 .cardsRow{
   overflow-x: scroll;
   display: flex;
-  align-items: center;
   gap: 20px;
   flex-wrap: nowrap;
   max-width: 1024px;
@@ -64,6 +63,11 @@ section{
   font-size: 12px;
   flex-shrink: 0;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* flex: 0 0 auto; */
 }
 .cardsRow .card .status{
   position: absolute;
@@ -77,19 +81,24 @@ section{
 .cardsRow .card img{
   width: 100%;
 }
-.cardsRow .ratingRow{
+.cardsRow .card .ratingRow{
   display: flex;
   align-items: center;
   gap: 3px;
   color: #918E9B;
 }
-.cardsRow .ratingRow i{
+.cardsRow .card .ratingRow i{
   color: orange;
 }
-.cardsRow title{
-  letter-spacing: 2.5px;
+.cardsRow .card .title{
+  letter-spacing: 1.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.cardsRow .price span{
+.cardsRow .card .price{
+  margin-block-start: auto;
+}
+.cardsRow .card .price span{
   font-weight: bold;
   font-size: 14px;
 }

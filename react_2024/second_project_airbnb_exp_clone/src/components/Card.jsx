@@ -25,16 +25,17 @@ const Status = ({status})=>(
 function Card({data}) {
     return (
     <div className="card">
-        {data.isStatus ? <Status status = {data.status} /> : ''}
+        {/* {data.isStatus ? <Status status = {data.status} /> : ''} */}
+        {data.isStatus && <Status status = {data.status} />}
         <img src={data.img} />
         <div className="ratingRow">
             <i className="bi bi-star-fill"></i>
             <span className="rating">{data.rating}</span>
-            <span className="review">({data.review})</span>
+            <span className="review">({data.review})</span> &#x2022;
             <span className="country">{data.country}</span>
         </div>
         <div className="title">
-            <p>{data.title}</p>
+            {data.title}
         </div>
         <div className="price"><span>From ${data.price}</span> / person</div>
     </div>
