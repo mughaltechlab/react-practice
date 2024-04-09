@@ -16,12 +16,12 @@ function Meme() {
 
         // counter(count+=1);
         // console.log(count);
-        const memeDataLength = memesData.data.memes.length;
-        const rand = Math.random() * memeDataLength;
+        // const memeDataLength = memesData.data.memes.length;
+        const rand = Math.random() * memesData.data.memes.length;
         const randInd = Math.floor(rand);
         const randMeme = memesData.data.memes[randInd];
         const randUrl = randMeme.url;
-        setUrl(url = randUrl)
+        setUrl((prevUrl)=>prevUrl = randUrl)
         console.log(url)
     }
     
@@ -46,9 +46,9 @@ function Meme() {
             >
                 Get a new meme image 🖼
             </button>
-        <div className="memeImg">
-            <img src={url} alt="" />
-        </div>
+            <div className="memeImg">
+                <img src={url} height={300} alt="" />
+            </div>
         </div>
     </main>
   )

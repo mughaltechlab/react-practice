@@ -40,7 +40,7 @@ main{
 .form{
   max-width: 800px;
   display: grid;
-  grid-template: 50px 50px / 1fr 1fr;
+  grid-template: 50px 50px auto / 1fr 1fr;
   margin-inline: auto;
   column-gap: 30px;
   row-gap: 20px;
@@ -62,8 +62,12 @@ main{
   font-weight: bold;
   letter-spacing: -10%;
 }
+
+.form .memeImg{
+  grid-column: 1 / -1;
+  place-self: center;
+}
 .memeImg img{
-  width: 400px;
-  background: #000;
   object-fit: contain;
+  margin-inline: auto;
 }
