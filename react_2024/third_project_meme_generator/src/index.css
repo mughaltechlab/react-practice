@@ -66,8 +66,31 @@ main{
 .form .memeImg{
   grid-column: 1 / -1;
   place-self: center;
+  justify-self: center;
+  position: relative;
 }
 .memeImg img{
-  object-fit: contain;
   margin-inline: auto;
+}
+.memeImg .text{
+  background: linear-gradient(-45deg,rgb(203, 201, 201), rgba(203, 201, 201,.5));
+  transform: translateX(-50%);
+  left: 50%;
+  padding-block: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  text-shadow: 0 0 5px #A626D3;
+}
+.memeImg .topText{
+  position: absolute;
+  font-weight: 800;
+  color: #fff;
+  top: 0px;
+}
+.memeImg .bottomText{
+  position: absolute;
+  font-weight: 800;
+  color: #fff;
+  bottom: 0px;
 }

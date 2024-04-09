@@ -11,7 +11,14 @@ function Meme() {
     //? useState  hook must be call only in functional component. "useState = State,use" (such as, [countVarhasValueZero, useMethodInWhichUseCountVar] = useState(0));
     
     // let [count, counter] = useState(0);
-    let [url,setUrl] = useState('');
+    // const [url,setUrl] = useState('');
+
+    const [memeObj, setMemeObj] = useState({
+                                    topText : 'one two three',
+                                    bottomText : 'you are free',
+                                    imgUrl : 'https://i.imgflip.com/39t1o.jpg',
+                                });
+
     function getMemeImg(){
 
         // counter(count+=1);
@@ -21,9 +28,32 @@ function Meme() {
         const randInd = Math.floor(rand);
         const randMeme = memesData.data.memes[randInd];
         const randUrl = randMeme.url;
-        setUrl((prevUrl)=>prevUrl = randUrl)
-        console.log(url)
+        // setUrl((prevUrl)=>prevUrl = randUrl)
+        // setUrl(randUrl)
+        // console.log(url)
+
+        setMemeObj((prevObj)=>{
+            return {
+                ...prevObj,
+                imgUrl : randUrl,
+            }
+        })
     }
+
+    function handleTopInp(e){
+        setMemeObj(prevObj=>({
+            ...prevObj,
+            topText : e.target.value
+        }))
+    }
+
+    function handleBottomInp(e){
+        setMemeObj(prevObj=>({
+            ...prevObj,
+            bottomText : e.target.value
+        }))
+    }
+    
     
   return (
     <main>
@@ -32,12 +62,17 @@ function Meme() {
             <input 
                 type="text"
                 className='formInp'
+                name='topText'
                 placeholder='Top text'
+                value={memeObj.topText}
+                onChange={handleTopInp}
             />
             <input 
                 type="text"
                 className='formInp'
                 placeholder='Bottom text'
+                value={memeObj.bottomText}
+                onChange={handleBottomInp}
             />
             <button 
                 className='formBtn'
@@ -47,7 +82,9 @@ function Meme() {
                 Get a new meme image 🖼
             </button>
             <div className="memeImg">
-                <img src={url} height={300} alt="" />
+                <div className="text topText">{memeObj.topText}</div>
+                <img src={memeObj.imgUrl} height={300} alt="" />
+                <div className="text bottomText">{memeObj.bottomText}</div>
             </div>
         </div>
     </main>
