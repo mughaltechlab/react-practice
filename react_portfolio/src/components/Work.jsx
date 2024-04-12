@@ -25,9 +25,9 @@ function Work() {
                 <img src={proj1} alt="" />
                 {/* live links */}
                 <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-                    <span className="text-2xl font-bold text-white tracking-wider">Project</span>
+                    <span className="text-2xl font-bold text-white tracking-wider">NFT marketplace</span>
                     <div className="pt-8 text-center">
-                        <a href="/">
+                        <a href="https://mughaltechlab.github.io/nft_marketplace_website_landing_page/" target='_blank'>
                             <button className="text-center rounded-lg bg-white px-4 py-3 m-2 text-gray-700 font-bold text-lg">
                                 Live
                             </button>
@@ -44,11 +44,11 @@ function Work() {
                 <img src={proj2} alt="" />
                 {/* live links */}
                 <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-                    <span className="text-2xl font-bold text-white tracking-wider">Project</span>
+                    <span className="text-2xl font-bold text-white tracking-wider text-center">AirBnb experience Clone <br /> in React js </span>
                     <div className="pt-8 text-center">
-                        <a href="/">
+                        <a href="https://github.com/mughaltechlab/react-practice/tree/main/react_2024/second_project_airbnb_exp_clone">
                             <button className="text-center rounded-lg bg-white px-4 py-3 m-2 text-gray-700 font-bold text-lg">
-                                Live
+                                Code
                             </button>
                         </a>
                     </div>
@@ -63,9 +63,9 @@ function Work() {
                 <img src={proj3} alt="" />
                 {/* live links */}
                 <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-                    <span className="text-2xl font-bold text-white tracking-wider">Project</span>
+                    <span className="text-2xl font-bold text-white tracking-wider text-center">Card Component with animations <br /> in React</span>
                     <div className="pt-8 text-center">
-                        <a href="/">
+                        <a href="https://www.linkedin.com/posts/saqib-ahmed-89b89826b_reactjs-frontenddevelopment-webanimations-activity-7183525215652495360-3lxz?utm_source=share&utm_medium=member_desktop">
                             <button className="text-center rounded-lg bg-white px-4 py-3 m-2 text-gray-700 font-bold text-lg">
                                 Live
                             </button>
