@@ -53,9 +53,9 @@ function Navbar() {
             <h1 className='text-3xl primary-color m-4'>SA.M</h1>
             {/* navigation */}
             <ul className="p-8 text-2xl">
-                <li className="p-5"><a href="#about">About</a></li>
-                <li className="p-5"><a href="#work">Work</a></li>
-                <li className="p-5"><a href="#contact">Contact</a></li>
+                <li onClick={handleNav} className="p-5"><a href="#about">About</a></li>
+                <li onClick={handleNav} className="p-5"><a href="#work">Work</a></li>
+                <li onClick={handleNav} className="p-5"><a href="#contact">Contact</a></li>
             </ul>
         </div>
         
