@@ -60,7 +60,7 @@ function Work() {
                                 shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center
                                 h-[200px] bg-cover relative">
                 {/* img */}
-                <img src={proj3} alt="" />
+                <img className='object-cover h-full' src={proj3} alt="" />
                 {/* live links */}
                 <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
                     <span className="text-2xl font-bold text-white tracking-wider text-center">Card Component with animations <br /> in React</span>
@@ -79,12 +79,12 @@ function Work() {
                                 shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center
                                 h-[200px] bg-cover relative">
                 {/* img */}
-                <img src={proj4} alt="" />
+                <img className='object-cover h-full' src={proj4} alt="" />
                 {/* live links */}
                 <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-                    <span className="text-2xl font-bold text-white tracking-wider">Project</span>
+                    <span className="text-2xl font-bold text-white tracking-wider">Parallax Scrollling Effect</span>
                     <div className="pt-8 text-center">
-                        <a href="/">
+                        <a href="https://mughaltechlab.github.io/parallax_scrolling_design/">
                             <button className="text-center rounded-lg bg-white px-4 py-3 m-2 text-gray-700 font-bold text-lg">
                                 Live
                             </button>
@@ -101,9 +101,9 @@ function Work() {
                 <img src={proj5} alt="" />
                 {/* live links */}
                 <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-                    <span className="text-2xl font-bold text-white tracking-wider">Project</span>
+                    <span className="text-2xl font-bold text-white tracking-wider">JS projects Bundle</span>
                     <div className="pt-8 text-center">
-                        <a href="/">
+                        <a href="https://mughaltechlab.github.io/js_projects/">
                             <button className="text-center rounded-lg bg-white px-4 py-3 m-2 text-gray-700 font-bold text-lg">
                                 Live
                             </button>
@@ -120,9 +120,9 @@ function Work() {
                 <img src={proj6} alt="" />
                 {/* live links */}
                 <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-                    <span className="text-2xl font-bold text-white tracking-wider">Project</span>
+                    <span className="text-2xl font-bold text-white tracking-wider">CHAT AI UI with Tailwind CSS</span>
                     <div className="pt-8 text-center">
-                        <a href="/">
+                        <a href="https://mughaltechlab-chat-clone.netlify.app/">
                             <button className="text-center rounded-lg bg-white px-4 py-3 m-2 text-gray-700 font-bold text-lg">
                                 Live
                             </button>
