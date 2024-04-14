@@ -5,6 +5,7 @@ import jsIc from '../assets/javascript.png'
 import tailwindIc from '../assets/tailwind.png'
 import bootIc from '../assets/boot.png'
 import reactIc from '../assets/react.png'
+import jqIc from '../assets/jq.webp'
 
 function Skills() {
   return (
@@ -33,6 +34,11 @@ function Skills() {
         <div className="flex flex-shrink-0 flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
             <img src={jsIc} alt="" width={100} height={100} />
             <p className="mt-2">JavaScript</p>
+        </div>
+
+        <div className="flex flex-shrink-0 flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
+            <img src={jqIc} alt="" width={100} height={100} />
+            <p className="mt-2">JQuery</p>
         </div>
 
         <div className="flex flex-shrink-0 flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
