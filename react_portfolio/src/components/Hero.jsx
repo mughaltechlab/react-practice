@@ -1,6 +1,7 @@
 import React from 'react'
 import heroImg from '../assets/profile.png'
-import { TypeAnimation } from "react-type-animation";
+import { TypeAnimation } from "react-type-animation"
+import myCv from '../assets/saqib_mughal_frontend_dev.pdf'
 
 function Hero() {
   return (
@@ -39,8 +40,8 @@ function Hero() {
             </p>
             {/* action btn */}
             <div className="my-8">
-                <a href="/" className="px-6 py-3 w-full rounded-xl mr-4
-                        bg-gradient-to-br from-orange-500 to-pink-500 text-white">
+                <a href={myCv} className="px-6 py-3 w-full rounded-xl mr-4
+                        bg-gradient-to-br from-orange-500 to-pink-500 text-white" download>
                     Download CV
                 </a>
                 <a href="#contact" className="px-6 py-3 w-full rounded-xl

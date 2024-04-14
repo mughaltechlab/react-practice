@@ -26,31 +26,6 @@ function Skills() {
         </div>
 
         <div className="flex flex-shrink-0 flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
-            <img src={cssIc} alt="" width={100} height={100} />
-            <p className="mt-2">CSS</p>
-        </div>
-
-        <div className="flex flex-shrink-0 flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
-            <img src={cssIc} alt="" width={100} height={100} />
-            <p className="mt-2">CSS</p>
-        </div>
-
-        <div className="flex flex-shrink-0 flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
-            <img src={cssIc} alt="" width={100} height={100} />
-            <p className="mt-2">CSS</p>
-        </div>
-
-        <div className="flex flex-shrink-0 flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
-            <img src={cssIc} alt="" width={100} height={100} />
-            <p className="mt-2">CSS</p>
-        </div>
-
-        <div className="flex flex-shrink-0 flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
-            <img src={cssIc} alt="" width={100} height={100} />
-            <p className="mt-2">CSS</p>
-        </div>
-
-        <div className="flex flex-shrink-0 flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
             <img src={bootIc} alt="" width={100} height={100} />
             <p className="mt-2">Bootstrap</p>
         </div>
