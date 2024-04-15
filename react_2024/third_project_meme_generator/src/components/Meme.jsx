@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import memesData from './memesData';
+// import memesData from './memesData';
 
 
 
@@ -14,10 +14,6 @@ function Meme() {
 
     const url = 'https://api.imgflip.com/get_memes';
     const [apiData, setAPiData] = useState({})
-    // let [count, counter] = useState(0);
-    // const [url,setUrl] = useState('');
-
-    
 
     useEffect(()=>{
         fetch(url)
@@ -34,8 +30,6 @@ function Meme() {
 
     function getMemeImg(){
 
-        // const memeDataLength = memesData.data.memes.length;
-        // const rand = Math.random() * memesData.data.memes.length;
         const rand = Math.random() * apiData.length;
 
         // console.log(apiData.length)
@@ -43,12 +37,6 @@ function Meme() {
         const randInd = Math.floor(rand);
         const randMeme = apiData[randInd];
         const randUrl = randMeme.url;
-        
-        // setUrl((prevUrl)=>prevUrl = randUrl)
-        // setUrl(randUrl)
-        // console.log(url)
-
-        
 
         setMemeObj((prevObj)=>{
             return {
@@ -76,7 +64,6 @@ function Meme() {
   return (
     <main>
         <div className='form'>
-            {/* <div className="count">{url}</div> */}
             <input 
                 type="text"
                 className='formInp'
