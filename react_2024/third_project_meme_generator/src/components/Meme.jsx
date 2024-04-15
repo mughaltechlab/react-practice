@@ -8,10 +8,23 @@ import memesData from './memesData';
 
 function Meme() {
     
+    // *******************((
     //? useState  hook must be call only in functional component. "useState = State,use" (such as, [countVarhasValueZero, useMethodInWhichUseCountVar] = useState(0));
-    
+    // *******************))
+
+    const url = 'https://api.imgflip.com/get_memes';
+    const [apiData, setAPiData] = useState({})
     // let [count, counter] = useState(0);
     // const [url,setUrl] = useState('');
+
+    
+
+    useEffect(()=>{
+        fetch(url)
+        .then(res=>res.json())
+        .then(data=>setAPiData(data.data.memes))
+    },[])
+    // console.log(apiData)
 
     const [memeObj, setMemeObj] = useState({
                                     topText : 'one two three',
@@ -21,16 +34,21 @@ function Meme() {
 
     function getMemeImg(){
 
-        // counter(count+=1);
-        // console.log(count);
         // const memeDataLength = memesData.data.memes.length;
-        const rand = Math.random() * memesData.data.memes.length;
+        // const rand = Math.random() * memesData.data.memes.length;
+        const rand = Math.random() * apiData.length;
+
+        // console.log(apiData.length)
+
         const randInd = Math.floor(rand);
-        const randMeme = memesData.data.memes[randInd];
+        const randMeme = apiData[randInd];
         const randUrl = randMeme.url;
+        
         // setUrl((prevUrl)=>prevUrl = randUrl)
         // setUrl(randUrl)
         // console.log(url)
+
+        
 
         setMemeObj((prevObj)=>{
             return {
