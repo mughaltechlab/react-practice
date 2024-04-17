@@ -1,21 +1,34 @@
 import React from "react"
 import Sidebar from "./components/Sidebar"
 import Editor from "./components/Editor"
-import { data } from "./data"
 import Split from "react-split"
 import { nanoid } from "nanoid"
+import { onSnapshot } from "firebase/firestore"
+import { notesCollection } from "./firebase"
 
 export default function App() {
     const [notes, setNotes] = React.useState(
         () => JSON.parse(localStorage.getItem("notes")) || []
     )
     const [currentNoteId, setCurrentNoteId] = React.useState(
-        (notes[0] && notes[0].id) || ""
+        // (notes[0] && notes[0].id) || ""
+        (notes[0]?.id) || ""
     )
 
+    const currentNote = notes.find(note => note.id === currentNoteId) || notes[0]
+
+
+    // ******>>>save notes in firebase
     React.useEffect(() => {
-        localStorage.setItem("notes", JSON.stringify(notes))
-    }, [notes])
+        onSnapshot(notesCollection, (snap)=>{
+            //todo: Sync up our local notes array data with snapshot (snap)
+        })
+    }, [])
+    
+    // ******>>>save notes in localstorage
+    // React.useEffect(() => {
+    //     localStorage.setItem("notes", JSON.stringify(notes))
+    // }, [notes])
 
     function createNewNote() {
         const newNote = {
@@ -47,11 +60,13 @@ export default function App() {
         setNotes(oldNotes => oldNotes.filter(note => note.id !== noteId))
     }
 
-    function findCurrentNote() {
-        return notes.find(note => {
-            return note.id === currentNoteId
-        }) || notes[0]
-    }
+    // ****
+    // ? ====>> doesnt need this func anymore replace by currentNote variable
+    // function findCurrentNote() {
+    //     return notes.find(note => {
+    //         return note.id === currentNoteId
+    //     }) || notes[0]
+    // }
 
     return (
         <main>
@@ -65,7 +80,8 @@ export default function App() {
                     >
                         <Sidebar
                             notes={notes}
-                            currentNote={findCurrentNote()}
+                            // currentNote={findCurrentNote()}
+                            currentNote={currentNote}
                             setCurrentNoteId={setCurrentNoteId}
                             newNote={createNewNote}
                             deleteNote={deleteNote}
@@ -74,7 +90,8 @@ export default function App() {
                             currentNoteId &&
                             notes.length > 0 &&
                             <Editor
-                                currentNote={findCurrentNote()}
+                                // currentNote={findCurrentNote()}
+                                currentNote={currentNote}
                                 updateNote={updateNote}
                             />
                         }
